@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6302674D1E2ACB75008107C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6302674C1E2ACB75008107C8 /* AppDelegate.swift */; };
+		6302674F1E2ACB75008107C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6302674E1E2ACB75008107C8 /* ViewController.swift */; };
+		630267521E2ACB75008107C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630267501E2ACB75008107C8 /* Main.storyboard */; };
+		630267551E2ACB75008107C8 /* Yuki_s_Happy_Circles.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 630267531E2ACB75008107C8 /* Yuki_s_Happy_Circles.xcdatamodeld */; };
+		630267571E2ACB75008107C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630267561E2ACB75008107C8 /* Assets.xcassets */; };
+		6302675A1E2ACB75008107C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630267581E2ACB75008107C8 /* LaunchScreen.storyboard */; };
+		630267651E2ACB75008107C8 /* Yuki_s_Happy_CirclesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630267641E2ACB75008107C8 /* Yuki_s_Happy_CirclesUITests.swift */; };
+		630267701E2AD622008107C8 /* UIColor+Yuki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6302676F1E2AD622008107C8 /* UIColor+Yuki.swift */; };
+		630267721E2AE9BB008107C8 /* HappyCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630267711E2AE9BB008107C8 /* HappyCircle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		630267611E2ACB75008107C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 630267411E2ACB75008107C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 630267481E2ACB75008107C8;
+			remoteInfo = "Yuki's Happy Circles";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		630267491E2ACB75008107C8 /* Yuki's Happy Circles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yuki's Happy Circles.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6302674C1E2ACB75008107C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6302674E1E2ACB75008107C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		630267511E2ACB75008107C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		630267541E2ACB75008107C8 /* Yuki_s_Happy_Circles.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Yuki_s_Happy_Circles.xcdatamodel; sourceTree = "<group>"; };
+		630267561E2ACB75008107C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		630267591E2ACB75008107C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6302675B1E2ACB75008107C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		630267601E2ACB75008107C8 /* Yuki's Happy CirclesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yuki's Happy CirclesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		630267641E2ACB75008107C8 /* Yuki_s_Happy_CirclesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yuki_s_Happy_CirclesUITests.swift; sourceTree = "<group>"; };
+		630267661E2ACB75008107C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6302676F1E2AD622008107C8 /* UIColor+Yuki.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Yuki.swift"; sourceTree = "<group>"; };
+		630267711E2AE9BB008107C8 /* HappyCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappyCircle.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		630267461E2ACB75008107C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6302675D1E2ACB75008107C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		630267401E2ACB75008107C8 = {
+			isa = PBXGroup;
+			children = (
+				6302674B1E2ACB75008107C8 /* Yuki's Happy Circles */,
+				630267631E2ACB75008107C8 /* Yuki's Happy CirclesUITests */,
+				6302674A1E2ACB75008107C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6302674A1E2ACB75008107C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				630267491E2ACB75008107C8 /* Yuki's Happy Circles.app */,
+				630267601E2ACB75008107C8 /* Yuki's Happy CirclesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6302674B1E2ACB75008107C8 /* Yuki's Happy Circles */ = {
+			isa = PBXGroup;
+			children = (
+				6302674C1E2ACB75008107C8 /* AppDelegate.swift */,
+				6302674E1E2ACB75008107C8 /* ViewController.swift */,
+				630267711E2AE9BB008107C8 /* HappyCircle.swift */,
+				6302676F1E2AD622008107C8 /* UIColor+Yuki.swift */,
+				630267501E2ACB75008107C8 /* Main.storyboard */,
+				630267561E2ACB75008107C8 /* Assets.xcassets */,
+				630267581E2ACB75008107C8 /* LaunchScreen.storyboard */,
+				6302675B1E2ACB75008107C8 /* Info.plist */,
+				630267531E2ACB75008107C8 /* Yuki_s_Happy_Circles.xcdatamodeld */,
+			);
+			path = "Yuki's Happy Circles";
+			sourceTree = "<group>";
+		};
+		630267631E2ACB75008107C8 /* Yuki's Happy CirclesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				630267641E2ACB75008107C8 /* Yuki_s_Happy_CirclesUITests.swift */,
+				630267661E2ACB75008107C8 /* Info.plist */,
+			);
+			path = "Yuki's Happy CirclesUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		630267481E2ACB75008107C8 /* Yuki's Happy Circles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 630267691E2ACB75008107C8 /* Build configuration list for PBXNativeTarget "Yuki's Happy Circles" */;
+			buildPhases = (
+				630267451E2ACB75008107C8 /* Sources */,
+				630267461E2ACB75008107C8 /* Frameworks */,
+				630267471E2ACB75008107C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Yuki's Happy Circles";
+			productName = "Yuki's Happy Circles";
+			productReference = 630267491E2ACB75008107C8 /* Yuki's Happy Circles.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6302675F1E2ACB75008107C8 /* Yuki's Happy CirclesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6302676C1E2ACB75008107C8 /* Build configuration list for PBXNativeTarget "Yuki's Happy CirclesUITests" */;
+			buildPhases = (
+				6302675C1E2ACB75008107C8 /* Sources */,
+				6302675D1E2ACB75008107C8 /* Frameworks */,
+				6302675E1E2ACB75008107C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				630267621E2ACB75008107C8 /* PBXTargetDependency */,
+			);
+			name = "Yuki's Happy CirclesUITests";
+			productName = "Yuki's Happy CirclesUITests";
+			productReference = 630267601E2ACB75008107C8 /* Yuki's Happy CirclesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		630267411E2ACB75008107C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = NelsonJE;
+				TargetAttributes = {
+					630267481E2ACB75008107C8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2RF92UCMKX;
+						ProvisioningStyle = Automatic;
+					};
+					6302675F1E2ACB75008107C8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2RF92UCMKX;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 630267481E2ACB75008107C8;
+					};
+				};
+			};
+			buildConfigurationList = 630267441E2ACB75008107C8 /* Build configuration list for PBXProject "Yuki's Happy Circles" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 630267401E2ACB75008107C8;
+			productRefGroup = 6302674A1E2ACB75008107C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				630267481E2ACB75008107C8 /* Yuki's Happy Circles */,
+				6302675F1E2ACB75008107C8 /* Yuki's Happy CirclesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		630267471E2ACB75008107C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6302675A1E2ACB75008107C8 /* LaunchScreen.storyboard in Resources */,
+				630267571E2ACB75008107C8 /* Assets.xcassets in Resources */,
+				630267521E2ACB75008107C8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6302675E1E2ACB75008107C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		630267451E2ACB75008107C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6302674F1E2ACB75008107C8 /* ViewController.swift in Sources */,
+				630267721E2AE9BB008107C8 /* HappyCircle.swift in Sources */,
+				630267551E2ACB75008107C8 /* Yuki_s_Happy_Circles.xcdatamodeld in Sources */,
+				6302674D1E2ACB75008107C8 /* AppDelegate.swift in Sources */,
+				630267701E2AD622008107C8 /* UIColor+Yuki.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6302675C1E2ACB75008107C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630267651E2ACB75008107C8 /* Yuki_s_Happy_CirclesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		630267621E2ACB75008107C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 630267481E2ACB75008107C8 /* Yuki's Happy Circles */;
+			targetProxy = 630267611E2ACB75008107C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		630267501E2ACB75008107C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				630267511E2ACB75008107C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		630267581E2ACB75008107C8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				630267591E2ACB75008107C8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		630267671E2ACB75008107C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		630267681E2ACB75008107C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6302676A1E2ACB75008107C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2RF92UCMKX;
+				INFOPLIST_FILE = "Yuki's Happy Circles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NelsonJE.Yuki-s-Happy-Circles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6302676B1E2ACB75008107C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2RF92UCMKX;
+				INFOPLIST_FILE = "Yuki's Happy Circles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NelsonJE.Yuki-s-Happy-Circles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6302676D1E2ACB75008107C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 2RF92UCMKX;
+				INFOPLIST_FILE = "Yuki's Happy CirclesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NelsonJE.Yuki-s-Happy-CirclesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Yuki's Happy Circles";
+			};
+			name = Debug;
+		};
+		6302676E1E2ACB75008107C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 2RF92UCMKX;
+				INFOPLIST_FILE = "Yuki's Happy CirclesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NelsonJE.Yuki-s-Happy-CirclesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Yuki's Happy Circles";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		630267441E2ACB75008107C8 /* Build configuration list for PBXProject "Yuki's Happy Circles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630267671E2ACB75008107C8 /* Debug */,
+				630267681E2ACB75008107C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		630267691E2ACB75008107C8 /* Build configuration list for PBXNativeTarget "Yuki's Happy Circles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6302676A1E2ACB75008107C8 /* Debug */,
+				6302676B1E2ACB75008107C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6302676C1E2ACB75008107C8 /* Build configuration list for PBXNativeTarget "Yuki's Happy CirclesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6302676D1E2ACB75008107C8 /* Debug */,
+				6302676E1E2ACB75008107C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		630267531E2ACB75008107C8 /* Yuki_s_Happy_Circles.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				630267541E2ACB75008107C8 /* Yuki_s_Happy_Circles.xcdatamodel */,
+			);
+			currentVersion = 630267541E2ACB75008107C8 /* Yuki_s_Happy_Circles.xcdatamodel */;
+			path = Yuki_s_Happy_Circles.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 630267411E2ACB75008107C8 /* Project object */;
+}
