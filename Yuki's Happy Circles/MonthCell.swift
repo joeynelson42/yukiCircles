@@ -13,8 +13,13 @@ class MonthCell: UICollectionViewCell {
     // MARK: Properties
     
     
+    @IBOutlet weak var testStackView: UIStackView!
     // Views
-    
+    let week1 = UIStackView()
+    let week2 = UIStackView()
+    let week3 = UIStackView()
+    let week4 = UIStackView()
+    let money = UIStackView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -22,7 +27,7 @@ class MonthCell: UICollectionViewCell {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
     }
     
     override func updateConstraints() {
@@ -32,7 +37,7 @@ class MonthCell: UICollectionViewCell {
     }
     
     private func configureSubviews(){
-
+        
     }
     
     private func applyConstraints() {

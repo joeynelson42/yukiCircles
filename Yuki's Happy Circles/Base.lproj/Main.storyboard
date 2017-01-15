@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,90 +22,372 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NE0-xr-rr8">
-                                <rect key="frame" x="0.0" y="325" width="375" height="342"/>
+                                <rect key="frame" x="0.0" y="360" width="375" height="307"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="342" id="5TC-u8-cns"/>
+                                    <constraint firstAttribute="height" constant="307" id="5TC-u8-cns"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="6rK-RL-jfp">
-                                    <size key="itemSize" width="373" height="340"/>
+                                    <size key="itemSize" width="373" height="299"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="monthCell" id="Ukf-18-9jq">
-                                        <rect key="frame" x="0.0" y="1" width="373" height="340"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="monthCell" id="Ukf-18-9jq" customClass="MonthCell" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="4" width="373" height="299"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="373" height="340"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="373" height="299"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's January" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRf-hW-UeY">
-                                                    <rect key="frame" x="45" y="35" width="87.5" height="20.5"/>
+                                                    <rect key="frame" x="48" y="35" width="87.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ccw-r0-DuQ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="373" height="5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="373" height="4"/>
                                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="5" id="lpE-dr-nfE"/>
+                                                        <constraint firstAttribute="height" constant="4" id="lpE-dr-nfE"/>
                                                     </constraints>
                                                 </view>
-                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JSV-Ht-qAa">
-                                                    <rect key="frame" x="45" y="79.5" width="320" height="34"/>
+                                                <stackView opaque="NO" contentMode="center" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JSV-Ht-qAa" userLabel="week1">
+                                                    <rect key="frame" x="48" y="80" width="277" height="34"/>
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aXo-gf-kbv">
-                                                            <rect key="frame" x="0.0" y="0.0" width="40" height="34"/>
-                                                            <color key="backgroundColor" red="0.18039215689999999" green="0.80784313730000001" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNY-Mj-ehQ" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="2" width="34.5" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                                    <color key="value" red="0.98431372549019602" green="0.95686274509803915" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJm-Kk-dt5" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="34.5" y="2" width="35" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                                    <color key="value" red="0.98431372549019602" green="0.95686274509803915" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsK-2X-oXK" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="69.5" y="2" width="34.5" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                                    <color key="value" red="0.98431372549019602" green="0.95686274509803915" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8B6-PO-xWK" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="104" y="2" width="34.5" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                                    <color key="value" red="0.98431372549019602" green="0.95686274509803915" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H02-5V-Crr">
+                                                            <rect key="frame" x="138.5" y="0.0" width="34.5" height="34"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ORi-xt-r7Y">
-                                                            <rect key="frame" x="40" y="0.0" width="40" height="34"/>
-                                                            <color key="backgroundColor" red="0.18039215689999999" green="0.80784313730000001" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F2U-fs-Yqj">
-                                                            <rect key="frame" x="80" y="0.0" width="40" height="34"/>
-                                                            <color key="backgroundColor" red="0.18039215689999999" green="0.80784313730000001" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I3W-p4-Bd9">
-                                                            <rect key="frame" x="120" y="0.0" width="40" height="34"/>
-                                                            <color key="backgroundColor" red="0.18039215689999999" green="0.80784313730000001" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XqG-kl-vdW">
-                                                            <rect key="frame" x="160" y="0.0" width="40" height="34"/>
-                                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lys-X1-DgL">
-                                                            <rect key="frame" x="200" y="0.0" width="40" height="34"/>
-                                                            <color key="backgroundColor" red="1" green="0.72156862749999995" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5FN-Np-Vw5">
-                                                            <rect key="frame" x="240" y="0.0" width="40" height="34"/>
-                                                            <color key="backgroundColor" red="1" green="0.72156862749999995" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RJf-2T-qV5">
-                                                            <rect key="frame" x="280" y="0.0" width="40" height="34"/>
-                                                            <color key="backgroundColor" red="1" green="0.72156862749999995" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </view>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5R-2n-bIO" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="173" y="2" width="35" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="randomizeFillColor" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0H-LT-b5f" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="208" y="2" width="34.5" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="randomizeFillColor" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ynk-gU-bjs" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="242.5" y="2" width="34.5" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="randomizeFillColor" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="34" id="1yN-rc-Aap"/>
+                                                        <constraint firstAttribute="width" constant="277" id="cKQ-no-PFK"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="center" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3Ut-dH-XAr" userLabel="week2">
+                                                    <rect key="frame" x="48" y="116" width="277" height="34"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKV-3J-VgZ" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="2" width="34.5" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                                    <color key="value" red="0.98431372549999996" green="0.95686274510000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geC-dj-RbH" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="34.5" y="2" width="35" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                                    <color key="value" red="0.98431372549999996" green="0.95686274510000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r70-Qc-ntz" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="69.5" y="2" width="34.5" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                                    <color key="value" red="0.98431372549999996" green="0.95686274510000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VqP-sg-KSB" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="104" y="2" width="34.5" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                                    <color key="value" red="0.98431372549999996" green="0.95686274510000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UFr-ZU-Yft">
+                                                            <rect key="frame" x="138.5" y="0.0" width="34.5" height="34"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </view>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poJ-cm-Hf7" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="173" y="2" width="35" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="randomizeFillColor" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaL-er-ddl" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="208" y="2" width="34.5" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="randomizeFillColor" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWh-2x-lE8" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="242.5" y="2" width="34.5" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="randomizeFillColor" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="277" id="sqU-GR-Qn7"/>
+                                                        <constraint firstAttribute="height" constant="34" id="uRz-9k-f2f"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="center" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="69z-sY-wvL" userLabel="week3">
+                                                    <rect key="frame" x="48" y="152" width="277" height="34"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIf-P5-Chy" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="2" width="34.5" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                                    <color key="value" red="0.98431372549999996" green="0.95686274510000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tge-9w-F5z" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="34.5" y="2" width="35" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                                    <color key="value" red="0.98431372549999996" green="0.95686274510000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7x-y6-4H1" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="69.5" y="2" width="34.5" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                                    <color key="value" red="0.98431372549999996" green="0.95686274510000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jn-sc-it3" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="104" y="2" width="34.5" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                                    <color key="value" red="0.98431372549999996" green="0.95686274510000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5me-rl-DfN">
+                                                            <rect key="frame" x="138.5" y="0.0" width="34.5" height="34"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </view>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHG-aQ-xyx" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="173" y="2" width="35" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="randomizeFillColor" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8TZ-Rz-wEW" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="208" y="2" width="34.5" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="randomizeFillColor" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGq-Qx-5lc" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="242.5" y="2" width="34.5" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="randomizeFillColor" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="34" id="6v3-t8-U11"/>
+                                                        <constraint firstAttribute="width" constant="277" id="xcX-r9-9Uq"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="center" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pXb-DW-cAl" userLabel="week4">
+                                                    <rect key="frame" x="48" y="188" width="277" height="34"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUl-ds-tNz" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="2" width="34.5" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                                    <color key="value" red="0.98431372549999996" green="0.95686274510000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNx-eg-Pux" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="34.5" y="2" width="35" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                                    <color key="value" red="0.98431372549999996" green="0.95686274510000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCV-ga-fO4" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="69.5" y="2" width="34.5" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                                    <color key="value" red="0.98431372549999996" green="0.95686274510000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhx-Zb-jOC" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="104" y="2" width="34.5" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                                    <color key="value" red="0.98431372549999996" green="0.95686274510000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8sH-rT-Ilm">
+                                                            <rect key="frame" x="138.5" y="0.0" width="34.5" height="34"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </view>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p97-qs-24A" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="173" y="2" width="35" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="randomizeFillColor" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTM-Nq-azO" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="208" y="2" width="34.5" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="randomizeFillColor" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rei-lA-CVX" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="242.5" y="2" width="34.5" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="randomizeFillColor" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="277" id="m1T-oP-2qA"/>
+                                                        <constraint firstAttribute="height" constant="34" id="yel-2Z-5J5"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="center" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xVw-xJ-U6f" userLabel="money">
+                                                    <rect key="frame" x="48" y="242" width="277" height="34"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cI2-N5-6M3" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="2" width="34.5" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                                    <color key="value" red="0.0" green="0.87450980392156863" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEI-5A-6Xo" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="34.5" y="2" width="35" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                                    <color key="value" red="0.0" green="0.87450980392156863" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7p-Ck-nDj" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="69.5" y="2" width="34.5" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                                    <color key="value" red="0.0" green="0.87450980392156863" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GkX-iI-YTt" customClass="HappyCircle" customModule="Yuki_s_Happy_Circles" customModuleProvider="target">
+                                                            <rect key="frame" x="104" y="2" width="34.5" height="30"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                                    <color key="value" red="0.0" green="0.87450980392156863" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v2A-1n-bL3">
+                                                            <rect key="frame" x="138.5" y="0.0" width="34.5" height="34"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HBt-kj-WSo">
+                                                            <rect key="frame" x="173" y="0.0" width="35" height="34"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o6f-Zv-q7f">
+                                                            <rect key="frame" x="208" y="0.0" width="34.5" height="34"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DXV-fO-haa">
+                                                            <rect key="frame" x="242.5" y="0.0" width="34.5" height="34"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </view>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="277" id="e88-B8-I2z"/>
+                                                        <constraint firstAttribute="height" constant="34" id="wOX-2A-VcL"/>
                                                     </constraints>
                                                 </stackView>
                                             </subviews>
                                         </view>
                                         <constraints>
+                                            <constraint firstItem="pXb-DW-cAl" firstAttribute="top" secondItem="69z-sY-wvL" secondAttribute="bottom" constant="2" id="2gd-zw-9M5"/>
                                             <constraint firstItem="LRf-hW-UeY" firstAttribute="top" secondItem="Ukf-18-9jq" secondAttribute="topMargin" constant="27" id="3dA-rm-KR0"/>
                                             <constraint firstAttribute="trailing" secondItem="Ccw-r0-DuQ" secondAttribute="trailing" id="3uV-Mh-Q3y"/>
+                                            <constraint firstItem="69z-sY-wvL" firstAttribute="leading" secondItem="LRf-hW-UeY" secondAttribute="leading" id="AdZ-9v-fns"/>
                                             <constraint firstItem="Ccw-r0-DuQ" firstAttribute="top" secondItem="Ukf-18-9jq" secondAttribute="top" id="GPf-am-maG"/>
                                             <constraint firstItem="JSV-Ht-qAa" firstAttribute="top" secondItem="LRf-hW-UeY" secondAttribute="bottom" constant="24" id="GXV-Ad-NDw"/>
                                             <constraint firstItem="JSV-Ht-qAa" firstAttribute="leading" secondItem="LRf-hW-UeY" secondAttribute="leading" id="HZ7-uS-1oW"/>
+                                            <constraint firstItem="pXb-DW-cAl" firstAttribute="leading" secondItem="LRf-hW-UeY" secondAttribute="leading" id="Idh-6Z-NA2"/>
+                                            <constraint firstItem="xVw-xJ-U6f" firstAttribute="centerX" secondItem="Ukf-18-9jq" secondAttribute="centerX" id="InI-gA-4y0"/>
+                                            <constraint firstItem="xVw-xJ-U6f" firstAttribute="top" secondItem="pXb-DW-cAl" secondAttribute="bottom" constant="20" id="JMa-O6-Ya6"/>
                                             <constraint firstItem="Ccw-r0-DuQ" firstAttribute="leading" secondItem="Ukf-18-9jq" secondAttribute="leading" id="Ps1-jH-pQG"/>
-                                            <constraint firstItem="LRf-hW-UeY" firstAttribute="leading" secondItem="Ukf-18-9jq" secondAttribute="leadingMargin" constant="37" id="gr2-s2-J79"/>
-                                            <constraint firstItem="JSV-Ht-qAa" firstAttribute="trailing" secondItem="Ukf-18-9jq" secondAttribute="trailingMargin" id="qqc-ym-OZn"/>
+                                            <constraint firstItem="pXb-DW-cAl" firstAttribute="centerX" secondItem="Ukf-18-9jq" secondAttribute="centerX" id="c6E-kb-Wf3"/>
+                                            <constraint firstItem="3Ut-dH-XAr" firstAttribute="centerX" secondItem="Ukf-18-9jq" secondAttribute="centerX" id="hK4-5a-Qy2"/>
+                                            <constraint firstItem="69z-sY-wvL" firstAttribute="centerX" secondItem="Ukf-18-9jq" secondAttribute="centerX" id="iJX-EB-oZg"/>
+                                            <constraint firstItem="3Ut-dH-XAr" firstAttribute="leading" secondItem="LRf-hW-UeY" secondAttribute="leading" id="uB7-b0-gAa"/>
+                                            <constraint firstItem="3Ut-dH-XAr" firstAttribute="top" secondItem="JSV-Ht-qAa" secondAttribute="bottom" constant="2" id="ylm-Ud-72T"/>
+                                            <constraint firstItem="69z-sY-wvL" firstAttribute="top" secondItem="3Ut-dH-XAr" secondAttribute="bottom" constant="2" id="yyQ-PH-QkB"/>
+                                            <constraint firstItem="JSV-Ht-qAa" firstAttribute="centerX" secondItem="Ukf-18-9jq" secondAttribute="centerX" id="zs7-2d-OS6"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="testStackView" destination="JSV-Ht-qAa" id="8mg-gd-BQm"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -115,7 +396,7 @@
                                 </connections>
                             </collectionView>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zur-DZ-j4O" userLabel="BubbleContainer">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="325"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="360"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -124,7 +405,7 @@
                             <constraint firstAttribute="trailing" secondItem="NE0-xr-rr8" secondAttribute="trailing" id="2ej-wR-R47"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NE0-xr-rr8" secondAttribute="bottom" id="3Fd-KO-CZg"/>
                             <constraint firstItem="zur-DZ-j4O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Sml-OK-0g5"/>
-                            <constraint firstItem="NE0-xr-rr8" firstAttribute="top" secondItem="zur-DZ-j4O" secondAttribute="bottom" id="mCE-MJ-CiO"/>
+                            <constraint firstItem="zur-DZ-j4O" firstAttribute="bottom" secondItem="NE0-xr-rr8" secondAttribute="top" id="mCE-MJ-CiO"/>
                             <constraint firstAttribute="trailing" secondItem="zur-DZ-j4O" secondAttribute="trailing" id="nwB-Kj-XMc"/>
                             <constraint firstItem="NE0-xr-rr8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rb1-ny-qHT"/>
                             <constraint firstItem="zur-DZ-j4O" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yOQ-NN-TpJ"/>

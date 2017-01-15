@@ -8,23 +8,23 @@
 
 import UIKit
 
-class HappyCircle: UIView {
+@IBDesignable class HappyCircle: UIButton {
     
     // MARK: Properties
-    var fillColor = UIColor.black
-    var filled = false
-    var circleSize: CGFloat = 30
+    @IBInspectable var fillColor: UIColor = UIColor.black
+    @IBInspectable var randomizeFillColor: Bool = false
+    @IBInspectable var filled: Bool = false
+    var circleSize: CGFloat = 28
     
     // Views
-    let mainCircle = UIView()
-    let fillCircle = UIView()
-    
+    let mainCircle = UIButton()
+    let fillCircle = UIButton()
     
     convenience init() {
         self.init(frame: CGRect.zero)
     }
     
-    convenience init(filled: Bool = false, color: UIColor = UIColor.black, size:CGFloat = 30){
+    convenience init(filled: Bool = false, color: UIColor = UIColor.black, size:CGFloat = 28){
         self.init(frame: CGRect.zero)
         self.fillColor = color
         self.filled = filled
@@ -37,7 +37,7 @@ class HappyCircle: UIView {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(frame: CGRect.zero)
     }
     
     override func updateConstraints() {
@@ -47,13 +47,23 @@ class HappyCircle: UIView {
     }
     
     private func configureSubviews(){
+        addTarget(self, action: #selector(toggle), for: .touchUpInside)
+        
+        if randomizeFillColor {
+            // use the yukiColors count - 1 for a random color excluding the yellow
+            let randIndex = Int(arc4random_uniform(UInt32(UIColor.yukiColors.count - 1)))
+            fillColor = UIColor.yukiColors[randIndex]
+        }
+        
         mainCircle.layer.borderWidth = 2.0
         mainCircle.layer.borderColor = UIColor.black.cgColor
         mainCircle.backgroundColor = .white
         mainCircle.layer.cornerRadius = circleSize / 2
+        mainCircle.addTarget(self, action: #selector(toggle), for: .touchUpInside)
         
         fillCircle.backgroundColor = fillColor
         fillCircle.layer.cornerRadius = circleSize / 2
+        fillCircle.addTarget(self, action: #selector(toggle), for: .touchUpInside)
         if filled {
             fillCircle.transform = CGAffineTransform.identity
         } else {
@@ -65,9 +75,6 @@ class HappyCircle: UIView {
         
         fillCircle.translatesAutoresizingMaskIntoConstraints = false
         addSubview(fillCircle)
-        
-        let tapGR = UITapGestureRecognizer(target: self, action: #selector(toggle))
-        addGestureRecognizer(tapGR)
     }
     
     private func applyConstraints() {

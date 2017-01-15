@@ -15,6 +15,18 @@ extension UIColor{
         return UIColor.fromHex(rgbValue: 0xECECEC)
     }
     
+    static let yukiColors = [UIColor.fromHex(rgbValue: 0x00BCAE),
+                             UIColor.fromHex(rgbValue: 0x0088FF),
+                             UIColor.fromHex(rgbValue: 0xFF0000),
+                             UIColor.fromHex(rgbValue: 0x00D7B5),
+                             UIColor.fromHex(rgbValue: 0x2200C8),
+                             UIColor.fromHex(rgbValue: 0xFF9D00),
+                             UIColor.fromHex(rgbValue: 0xFF009F),
+                             UIColor.fromHex(rgbValue: 0x16DDE3),
+                             UIColor.fromHex(rgbValue: 0xFFCC00),
+                             UIColor.fromHex(rgbValue: 0x00DF00),
+                             UIColor.fromHex(rgbValue: 0xFBF400)]
+    
     class func stringToHex(s: NSString)->Int{
         let numbers = [
             "a": 10, "A": 10,
