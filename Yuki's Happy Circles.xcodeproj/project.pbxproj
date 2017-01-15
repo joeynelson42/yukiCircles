@@ -16,6 +16,8 @@
 		630267651E2ACB75008107C8 /* Yuki_s_Happy_CirclesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630267641E2ACB75008107C8 /* Yuki_s_Happy_CirclesUITests.swift */; };
 		630267701E2AD622008107C8 /* UIColor+Yuki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6302676F1E2AD622008107C8 /* UIColor+Yuki.swift */; };
 		630267721E2AE9BB008107C8 /* HappyCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630267711E2AE9BB008107C8 /* HappyCircle.swift */; };
+		63EB30B61E2AF8F9001B10B8 /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EB30B51E2AF8F9001B10B8 /* Month.swift */; };
+		63EB30B81E2AFF9B001B10B8 /* MonthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EB30B71E2AFF9B001B10B8 /* MonthCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		630267661E2ACB75008107C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6302676F1E2AD622008107C8 /* UIColor+Yuki.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Yuki.swift"; sourceTree = "<group>"; };
 		630267711E2AE9BB008107C8 /* HappyCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappyCircle.swift; sourceTree = "<group>"; };
+		63EB30B51E2AF8F9001B10B8 /* Month.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Month.swift; sourceTree = "<group>"; };
+		63EB30B71E2AFF9B001B10B8 /* MonthCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 				6302674C1E2ACB75008107C8 /* AppDelegate.swift */,
 				6302674E1E2ACB75008107C8 /* ViewController.swift */,
 				630267711E2AE9BB008107C8 /* HappyCircle.swift */,
+				63EB30B51E2AF8F9001B10B8 /* Month.swift */,
+				63EB30B71E2AFF9B001B10B8 /* MonthCell.swift */,
 				6302676F1E2AD622008107C8 /* UIColor+Yuki.swift */,
 				630267501E2ACB75008107C8 /* Main.storyboard */,
 				630267561E2ACB75008107C8 /* Assets.xcassets */,
@@ -212,9 +218,11 @@
 			files = (
 				6302674F1E2ACB75008107C8 /* ViewController.swift in Sources */,
 				630267721E2AE9BB008107C8 /* HappyCircle.swift in Sources */,
+				63EB30B61E2AF8F9001B10B8 /* Month.swift in Sources */,
 				630267551E2ACB75008107C8 /* Yuki_s_Happy_Circles.xcdatamodeld in Sources */,
 				6302674D1E2ACB75008107C8 /* AppDelegate.swift in Sources */,
 				630267701E2AD622008107C8 /* UIColor+Yuki.swift in Sources */,
+				63EB30B81E2AFF9B001B10B8 /* MonthCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +430,7 @@
 				6302676B1E2ACB75008107C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6302676C1E2ACB75008107C8 /* Build configuration list for PBXNativeTarget "Yuki's Happy CirclesUITests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +439,7 @@
 				6302676E1E2ACB75008107C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

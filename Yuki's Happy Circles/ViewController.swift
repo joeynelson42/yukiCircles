@@ -70,6 +70,16 @@ extension ViewController : UICollectionViewDelegate, UICollectionViewDataSource,
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "monthCell", for: indexPath)
+        
+        let circle = HappyCircle(filled: false, color: .green)
+        cell.addSubview(circle)
+        
+        circle.translatesAutoresizingMaskIntoConstraints = false
+        circle.centerXAnchor.constraint(equalTo: cell.centerXAnchor).isActive = true
+        circle.centerYAnchor.constraint(equalTo: cell.centerYAnchor).isActive = true
+        circle.widthAnchor.constraint(equalToConstant: 30).isActive = true
+        circle.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        
         return cell
     }
     
