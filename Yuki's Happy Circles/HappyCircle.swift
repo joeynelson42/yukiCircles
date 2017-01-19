@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol HappyCircleDelegate {
+    func circleToggled(on:Bool, circle:HappyCircle)
+}
+
 @IBDesignable class HappyCircle: UIButton {
     
     // MARK: Properties
@@ -15,6 +19,8 @@ import UIKit
     @IBInspectable var randomizeFillColor: Bool = false
     @IBInspectable var filled: Bool = false
     var circleSize: CGFloat = 28
+    
+    var delegate: HappyCircleDelegate?
     
     // Views
     let mainCircle = UIButton()
@@ -101,6 +107,22 @@ import UIKit
         }
         
         filled = !filled
+        delegate?.circleToggled(on: filled, circle: self)
+    }
+    
+    func setToggle(on: Bool) {
+        if on {
+            UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0, options: [.curveEaseIn, .allowUserInteraction], animations: {
+                self.fillCircle.transform = CGAffineTransform.identity
+            }, completion: nil)
+        } else {
+            UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0, options: [.curveEaseIn, .allowUserInteraction], animations: {
+                self.fillCircle.transform = CGAffineTransform(scaleX: 0.001, y: 0.001)
+            }, completion: nil)
+        }
+        
+        filled = on
+        delegate?.circleToggled(on: filled, circle: self)
     }
 }
 

@@ -47,13 +47,6 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ccw-r0-DuQ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="373" height="4"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="4" id="lpE-dr-nfE"/>
-                                                    </constraints>
-                                                </view>
                                                 <stackView opaque="NO" contentMode="center" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JSV-Ht-qAa" userLabel="week1">
                                                     <rect key="frame" x="48" y="80" width="277" height="34"/>
                                                     <subviews>
@@ -368,15 +361,12 @@
                                         <constraints>
                                             <constraint firstItem="pXb-DW-cAl" firstAttribute="top" secondItem="69z-sY-wvL" secondAttribute="bottom" constant="2" id="2gd-zw-9M5"/>
                                             <constraint firstItem="LRf-hW-UeY" firstAttribute="top" secondItem="Ukf-18-9jq" secondAttribute="topMargin" constant="27" id="3dA-rm-KR0"/>
-                                            <constraint firstAttribute="trailing" secondItem="Ccw-r0-DuQ" secondAttribute="trailing" id="3uV-Mh-Q3y"/>
                                             <constraint firstItem="69z-sY-wvL" firstAttribute="leading" secondItem="LRf-hW-UeY" secondAttribute="leading" id="AdZ-9v-fns"/>
-                                            <constraint firstItem="Ccw-r0-DuQ" firstAttribute="top" secondItem="Ukf-18-9jq" secondAttribute="top" id="GPf-am-maG"/>
                                             <constraint firstItem="JSV-Ht-qAa" firstAttribute="top" secondItem="LRf-hW-UeY" secondAttribute="bottom" constant="24" id="GXV-Ad-NDw"/>
                                             <constraint firstItem="JSV-Ht-qAa" firstAttribute="leading" secondItem="LRf-hW-UeY" secondAttribute="leading" id="HZ7-uS-1oW"/>
                                             <constraint firstItem="pXb-DW-cAl" firstAttribute="leading" secondItem="LRf-hW-UeY" secondAttribute="leading" id="Idh-6Z-NA2"/>
                                             <constraint firstItem="xVw-xJ-U6f" firstAttribute="centerX" secondItem="Ukf-18-9jq" secondAttribute="centerX" id="InI-gA-4y0"/>
                                             <constraint firstItem="xVw-xJ-U6f" firstAttribute="top" secondItem="pXb-DW-cAl" secondAttribute="bottom" constant="20" id="JMa-O6-Ya6"/>
-                                            <constraint firstItem="Ccw-r0-DuQ" firstAttribute="leading" secondItem="Ukf-18-9jq" secondAttribute="leading" id="Ps1-jH-pQG"/>
                                             <constraint firstItem="pXb-DW-cAl" firstAttribute="centerX" secondItem="Ukf-18-9jq" secondAttribute="centerX" id="c6E-kb-Wf3"/>
                                             <constraint firstItem="3Ut-dH-XAr" firstAttribute="centerX" secondItem="Ukf-18-9jq" secondAttribute="centerX" id="hK4-5a-Qy2"/>
                                             <constraint firstItem="69z-sY-wvL" firstAttribute="centerX" secondItem="Ukf-18-9jq" secondAttribute="centerX" id="iJX-EB-oZg"/>
@@ -386,7 +376,12 @@
                                             <constraint firstItem="JSV-Ht-qAa" firstAttribute="centerX" secondItem="Ukf-18-9jq" secondAttribute="centerX" id="zs7-2d-OS6"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="testStackView" destination="JSV-Ht-qAa" id="8mg-gd-BQm"/>
+                                            <outlet property="money" destination="xVw-xJ-U6f" id="QR9-ni-LBf"/>
+                                            <outlet property="monthLabel" destination="LRf-hW-UeY" id="169-mE-2kB"/>
+                                            <outlet property="week1" destination="JSV-Ht-qAa" id="mLV-YN-Yh9"/>
+                                            <outlet property="week2" destination="3Ut-dH-XAr" id="6kc-Qa-yid"/>
+                                            <outlet property="week3" destination="69z-sY-wvL" id="YqQ-lz-MIe"/>
+                                            <outlet property="week4" destination="pXb-DW-cAl" id="YVm-av-8hI"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -395,6 +390,13 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="F2j-ET-8P8"/>
                                 </connections>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ccw-r0-DuQ" userLabel="blackBar">
+                                <rect key="frame" x="0.0" y="360" width="375" height="4"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="lpE-dr-nfE"/>
+                                </constraints>
+                            </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zur-DZ-j4O" userLabel="BubbleContainer">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="360"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -404,10 +406,13 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="NE0-xr-rr8" secondAttribute="trailing" id="2ej-wR-R47"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NE0-xr-rr8" secondAttribute="bottom" id="3Fd-KO-CZg"/>
+                            <constraint firstItem="Ccw-r0-DuQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Gg3-m9-Cyv"/>
                             <constraint firstItem="zur-DZ-j4O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Sml-OK-0g5"/>
+                            <constraint firstAttribute="trailing" secondItem="Ccw-r0-DuQ" secondAttribute="trailing" id="kdW-1j-Atf"/>
                             <constraint firstItem="zur-DZ-j4O" firstAttribute="bottom" secondItem="NE0-xr-rr8" secondAttribute="top" id="mCE-MJ-CiO"/>
                             <constraint firstAttribute="trailing" secondItem="zur-DZ-j4O" secondAttribute="trailing" id="nwB-Kj-XMc"/>
                             <constraint firstItem="NE0-xr-rr8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rb1-ny-qHT"/>
+                            <constraint firstItem="Ccw-r0-DuQ" firstAttribute="top" secondItem="NE0-xr-rr8" secondAttribute="top" id="xSP-e9-Yic"/>
                             <constraint firstItem="zur-DZ-j4O" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yOQ-NN-TpJ"/>
                         </constraints>
                     </view>
