@@ -14,8 +14,15 @@
 		630267571E2ACB75008107C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630267561E2ACB75008107C8 /* Assets.xcassets */; };
 		6302675A1E2ACB75008107C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630267581E2ACB75008107C8 /* LaunchScreen.storyboard */; };
 		630267651E2ACB75008107C8 /* Yuki_s_Happy_CirclesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630267641E2ACB75008107C8 /* Yuki_s_Happy_CirclesUITests.swift */; };
-		630267701E2AD622008107C8 /* UIColor+Yuki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6302676F1E2AD622008107C8 /* UIColor+Yuki.swift */; };
 		630267721E2AE9BB008107C8 /* HappyCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630267711E2AE9BB008107C8 /* HappyCircle.swift */; };
+		63D066601E45321E0047E2CF /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D066481E45321E0047E2CF /* StartViewController.swift */; };
+		63D066611E45321E0047E2CF /* UIColor+Yuki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D066491E45321E0047E2CF /* UIColor+Yuki.swift */; };
+		63D066661E4534BC0047E2CF /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D066651E4534BC0047E2CF /* StartView.swift */; };
+		63D066681E45356F0047E2CF /* BigBanging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D066671E45356F0047E2CF /* BigBanging.swift */; };
+		63D0666A1E4538280047E2CF /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D066691E4538280047E2CF /* UIView+.swift */; };
+		63D0666C1E454BA10047E2CF /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D0666B1E454BA10047E2CF /* StoryViewController.swift */; };
+		63D0666E1E454BD40047E2CF /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D0666D1E454BD40047E2CF /* StoryView.swift */; };
+		63D066701E454E930047E2CF /* StoryCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D0666F1E454E930047E2CF /* StoryCollectionCell.swift */; };
 		63EB30B61E2AF8F9001B10B8 /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EB30B51E2AF8F9001B10B8 /* Month.swift */; };
 		63EB30B81E2AFF9B001B10B8 /* MonthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EB30B71E2AFF9B001B10B8 /* MonthCell.swift */; };
 		63EC94A91E3140C200FC1BA5 /* CloudManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EC94A81E3140C200FC1BA5 /* CloudManager.swift */; };
@@ -44,8 +51,15 @@
 		630267601E2ACB75008107C8 /* Yuki's Happy CirclesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yuki's Happy CirclesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		630267641E2ACB75008107C8 /* Yuki_s_Happy_CirclesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yuki_s_Happy_CirclesUITests.swift; sourceTree = "<group>"; };
 		630267661E2ACB75008107C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6302676F1E2AD622008107C8 /* UIColor+Yuki.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Yuki.swift"; sourceTree = "<group>"; };
 		630267711E2AE9BB008107C8 /* HappyCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappyCircle.swift; sourceTree = "<group>"; };
+		63D066481E45321E0047E2CF /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		63D066491E45321E0047E2CF /* UIColor+Yuki.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Yuki.swift"; sourceTree = "<group>"; };
+		63D066651E4534BC0047E2CF /* StartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		63D066671E45356F0047E2CF /* BigBanging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigBanging.swift; sourceTree = "<group>"; };
+		63D066691E4538280047E2CF /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		63D0666B1E454BA10047E2CF /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		63D0666D1E454BD40047E2CF /* StoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
+		63D0666F1E454E930047E2CF /* StoryCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryCollectionCell.swift; sourceTree = "<group>"; };
 		63EB30B51E2AF8F9001B10B8 /* Month.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Month.swift; sourceTree = "<group>"; };
 		63EB30B71E2AFF9B001B10B8 /* MonthCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthCell.swift; sourceTree = "<group>"; };
 		63EC94A81E3140C200FC1BA5 /* CloudManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudManager.swift; sourceTree = "<group>"; };
@@ -96,11 +110,9 @@
 			children = (
 				63EC94AA1E31411B00FC1BA5 /* Yuki's Happy Circles.entitlements */,
 				6302674C1E2ACB75008107C8 /* AppDelegate.swift */,
-				6302674E1E2ACB75008107C8 /* ViewController.swift */,
-				630267711E2AE9BB008107C8 /* HappyCircle.swift */,
-				63EB30B51E2AF8F9001B10B8 /* Month.swift */,
-				63EB30B71E2AFF9B001B10B8 /* MonthCell.swift */,
-				6302676F1E2AD622008107C8 /* UIColor+Yuki.swift */,
+				63D066301E4531CC0047E2CF /* NYRA */,
+				63D066311E4531D40047E2CF /* Extension */,
+				63D066641E4532680047E2CF /* FunTime */,
 				630267501E2ACB75008107C8 /* Main.storyboard */,
 				630267561E2ACB75008107C8 /* Assets.xcassets */,
 				630267581E2ACB75008107C8 /* LaunchScreen.storyboard */,
@@ -118,6 +130,39 @@
 				630267661E2ACB75008107C8 /* Info.plist */,
 			);
 			path = "Yuki's Happy CirclesUITests";
+			sourceTree = "<group>";
+		};
+		63D066301E4531CC0047E2CF /* NYRA */ = {
+			isa = PBXGroup;
+			children = (
+				6302674E1E2ACB75008107C8 /* ViewController.swift */,
+				630267711E2AE9BB008107C8 /* HappyCircle.swift */,
+				63EB30B51E2AF8F9001B10B8 /* Month.swift */,
+				63EB30B71E2AFF9B001B10B8 /* MonthCell.swift */,
+			);
+			name = NYRA;
+			sourceTree = "<group>";
+		};
+		63D066311E4531D40047E2CF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				63D066671E45356F0047E2CF /* BigBanging.swift */,
+				63D066491E45321E0047E2CF /* UIColor+Yuki.swift */,
+				63D066691E4538280047E2CF /* UIView+.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		63D066641E4532680047E2CF /* FunTime */ = {
+			isa = PBXGroup;
+			children = (
+				63D066481E45321E0047E2CF /* StartViewController.swift */,
+				63D066651E4534BC0047E2CF /* StartView.swift */,
+				63D0666B1E454BA10047E2CF /* StoryViewController.swift */,
+				63D0666D1E454BD40047E2CF /* StoryView.swift */,
+				63D0666F1E454E930047E2CF /* StoryCollectionCell.swift */,
+			);
+			name = FunTime;
 			sourceTree = "<group>";
 		};
 		63EC94AB1E31411E00FC1BA5 /* Frameworks */ = {
@@ -241,13 +286,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63D066701E454E930047E2CF /* StoryCollectionCell.swift in Sources */,
+				63D066611E45321E0047E2CF /* UIColor+Yuki.swift in Sources */,
+				63D066601E45321E0047E2CF /* StartViewController.swift in Sources */,
+				63D0666E1E454BD40047E2CF /* StoryView.swift in Sources */,
+				63D0666C1E454BA10047E2CF /* StoryViewController.swift in Sources */,
 				6302674F1E2ACB75008107C8 /* ViewController.swift in Sources */,
 				630267721E2AE9BB008107C8 /* HappyCircle.swift in Sources */,
+				63D066681E45356F0047E2CF /* BigBanging.swift in Sources */,
 				63EB30B61E2AF8F9001B10B8 /* Month.swift in Sources */,
+				63D066661E4534BC0047E2CF /* StartView.swift in Sources */,
 				630267551E2ACB75008107C8 /* Yuki_s_Happy_Circles.xcdatamodeld in Sources */,
 				6302674D1E2ACB75008107C8 /* AppDelegate.swift in Sources */,
-				630267701E2AD622008107C8 /* UIColor+Yuki.swift in Sources */,
 				63EB30B81E2AFF9B001B10B8 /* MonthCell.swift in Sources */,
+				63D0666A1E4538280047E2CF /* UIView+.swift in Sources */,
 				63EC94A91E3140C200FC1BA5 /* CloudManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

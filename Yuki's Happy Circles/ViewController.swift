@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var collectionHeight: NSLayoutConstraint!
     @IBOutlet weak var bubbleContainer: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
     let screenWidth = UIScreen.main.bounds.width
@@ -35,14 +36,22 @@ class ViewController: UIViewController {
         return true
     }
     
+    @IBAction func funHouseEntrance(_ sender: UITapGestureRecognizer) {
+        let startVC = StartViewController()
+        let navVC = UINavigationController(rootViewController: startVC)
+        navVC.isNavigationBarHidden = true
+        navVC.modalTransitionStyle = .crossDissolve
+        present(navVC, animated: true, completion: nil)
+    }
+    
     func bigBang💥() {
         for circle in bubbleContainer.subviews {
             circle.removeFromSuperview()
         }
         
-        for _ in 1...20 {
+        for _ in 1...35 {
             let x = CGFloat(arc4random_uniform(UInt32(screenWidth)))
-            let y = CGFloat(arc4random_uniform(UInt32(screenHeight / 2)))
+            let y = CGFloat(arc4random_uniform(UInt32(screenHeight)))
             let size = CGFloat(arc4random_uniform(UInt32(100)))
             let colorIndex = Int(arc4random_uniform(UInt32(UIColor.yukiColors.count)))
             
