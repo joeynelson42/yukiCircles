@@ -15,6 +15,11 @@ extension UIColor{
         return UIColor.fromHex(rgbValue: 0xECECEC)
     }
     
+    class func randomYukiColor() -> UIColor {
+        let colorIndex = Int(arc4random_uniform(UInt32(UIColor.yukiColors.count)))
+        return yukiColors[colorIndex]
+    }
+    
     static let yukiColors = [UIColor.fromHex(rgbValue: 0x00BCAE),
                              UIColor.fromHex(rgbValue: 0x0088FF),
                              UIColor.fromHex(rgbValue: 0xFF0000),

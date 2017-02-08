@@ -28,11 +28,10 @@ extension BigBanging where Self:UIView {
             let x = CGFloat(arc4random_uniform(UInt32(width)))
             let y = CGFloat(arc4random_uniform(UInt32(height)))
             let size = CGFloat(arc4random_uniform(UInt32(100)))
-            let colorIndex = Int(arc4random_uniform(UInt32(UIColor.yukiColors.count)))
             
             let circle = UIView(frame: CGRect(x: x, y: y, width: size, height: size))
             circle.layer.cornerRadius = size / 2
-            circle.backgroundColor = UIColor.yukiColors[colorIndex]
+            circle.backgroundColor = UIColor.randomYukiColor()
             circle.layer.borderWidth = 2.0
             circle.transform = CGAffineTransform(scaleX: 0.001, y: 0.001)
             circle.tag = 121491

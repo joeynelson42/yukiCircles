@@ -15,9 +15,32 @@
 		6302675A1E2ACB75008107C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630267581E2ACB75008107C8 /* LaunchScreen.storyboard */; };
 		630267651E2ACB75008107C8 /* Yuki_s_Happy_CirclesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630267641E2ACB75008107C8 /* Yuki_s_Happy_CirclesUITests.swift */; };
 		630267721E2AE9BB008107C8 /* HappyCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630267711E2AE9BB008107C8 /* HappyCircle.swift */; };
-		63D066601E45321E0047E2CF /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D066481E45321E0047E2CF /* StartViewController.swift */; };
+		6347D75B1E4BBDED000DE893 /* APSpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6347D75A1E4BBDED000DE893 /* APSpringButton.swift */; };
+		6347D75D1E4BBEFE000DE893 /* PagedProgressControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6347D75C1E4BBEFE000DE893 /* PagedProgressControl.swift */; };
+		6347D75F1E4BC090000DE893 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6347D75E1E4BC090000DE893 /* Constants.swift */; };
+		6347D7771E4BD6ED000DE893 /* Array+HeroModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6347D7631E4BD6ED000DE893 /* Array+HeroModifier.swift */; };
+		6347D7781E4BD6ED000DE893 /* CALayer+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6347D7641E4BD6ED000DE893 /* CALayer+Hero.swift */; };
+		6347D7791E4BD6ED000DE893 /* CAMediaTimingFunction+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6347D7651E4BD6ED000DE893 /* CAMediaTimingFunction+Hero.swift */; };
+		6347D77A1E4BD6ED000DE893 /* CascadePreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6347D7661E4BD6ED000DE893 /* CascadePreprocessor.swift */; };
+		6347D77B1E4BD6ED000DE893 /* CG+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6347D7671E4BD6ED000DE893 /* CG+Hero.swift */; };
+		6347D77C1E4BD6ED000DE893 /* DispatchQueue+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6347D7681E4BD6ED000DE893 /* DispatchQueue+Hero.swift */; };
+		6347D77D1E4BD6ED000DE893 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6347D7691E4BD6ED000DE893 /* Hero.swift */; };
+		6347D77E1E4BD6ED000DE893 /* HeroContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6347D76A1E4BD6ED000DE893 /* HeroContext.swift */; };
+		6347D77F1E4BD6ED000DE893 /* HeroDebugPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6347D76B1E4BD6ED000DE893 /* HeroDebugPlugin.swift */; };
+		6347D7801E4BD6ED000DE893 /* HeroDebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6347D76C1E4BD6ED000DE893 /* HeroDebugView.swift */; };
+		6347D7811E4BD6ED000DE893 /* HeroDefaultAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6347D76D1E4BD6ED000DE893 /* HeroDefaultAnimator.swift */; };
+		6347D7821E4BD6ED000DE893 /* HeroDefaultAnimatorViewContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6347D76E1E4BD6ED000DE893 /* HeroDefaultAnimatorViewContext.swift */; };
+		6347D7831E4BD6ED000DE893 /* HeroModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6347D76F1E4BD6ED000DE893 /* HeroModifier.swift */; };
+		6347D7841E4BD6ED000DE893 /* HeroPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6347D7701E4BD6ED000DE893 /* HeroPlugin.swift */; };
+		6347D7851E4BD6ED000DE893 /* HeroTargetState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6347D7711E4BD6ED000DE893 /* HeroTargetState.swift */; };
+		6347D7861E4BD6ED000DE893 /* HeroTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6347D7721E4BD6ED000DE893 /* HeroTypes.swift */; };
+		6347D7871E4BD6ED000DE893 /* IgnoreSubviewModifiersPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6347D7731E4BD6ED000DE893 /* IgnoreSubviewModifiersPreprocessor.swift */; };
+		6347D7881E4BD6ED000DE893 /* MatchPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6347D7741E4BD6ED000DE893 /* MatchPreprocessor.swift */; };
+		6347D7891E4BD6ED000DE893 /* SourcePreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6347D7751E4BD6ED000DE893 /* SourcePreprocessor.swift */; };
+		6347D78A1E4BD6ED000DE893 /* UIKit+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6347D7761E4BD6ED000DE893 /* UIKit+Hero.swift */; };
+		6347D78C1E4BD70A000DE893 /* StoryVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6347D78B1E4BD70A000DE893 /* StoryVideoViewController.swift */; };
+		6347D78E1E4BD735000DE893 /* StoryVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6347D78D1E4BD735000DE893 /* StoryVideoView.swift */; };
 		63D066611E45321E0047E2CF /* UIColor+Yuki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D066491E45321E0047E2CF /* UIColor+Yuki.swift */; };
-		63D066661E4534BC0047E2CF /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D066651E4534BC0047E2CF /* StartView.swift */; };
 		63D066681E45356F0047E2CF /* BigBanging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D066671E45356F0047E2CF /* BigBanging.swift */; };
 		63D0666A1E4538280047E2CF /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D066691E4538280047E2CF /* UIView+.swift */; };
 		63D0666C1E454BA10047E2CF /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D0666B1E454BA10047E2CF /* StoryViewController.swift */; };
@@ -52,9 +75,32 @@
 		630267641E2ACB75008107C8 /* Yuki_s_Happy_CirclesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yuki_s_Happy_CirclesUITests.swift; sourceTree = "<group>"; };
 		630267661E2ACB75008107C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		630267711E2AE9BB008107C8 /* HappyCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappyCircle.swift; sourceTree = "<group>"; };
-		63D066481E45321E0047E2CF /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		6347D75A1E4BBDED000DE893 /* APSpringButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APSpringButton.swift; sourceTree = "<group>"; };
+		6347D75C1E4BBEFE000DE893 /* PagedProgressControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagedProgressControl.swift; sourceTree = "<group>"; };
+		6347D75E1E4BC090000DE893 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6347D7631E4BD6ED000DE893 /* Array+HeroModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+HeroModifier.swift"; sourceTree = "<group>"; };
+		6347D7641E4BD6ED000DE893 /* CALayer+Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+Hero.swift"; sourceTree = "<group>"; };
+		6347D7651E4BD6ED000DE893 /* CAMediaTimingFunction+Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAMediaTimingFunction+Hero.swift"; sourceTree = "<group>"; };
+		6347D7661E4BD6ED000DE893 /* CascadePreprocessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CascadePreprocessor.swift; sourceTree = "<group>"; };
+		6347D7671E4BD6ED000DE893 /* CG+Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CG+Hero.swift"; sourceTree = "<group>"; };
+		6347D7681E4BD6ED000DE893 /* DispatchQueue+Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Hero.swift"; sourceTree = "<group>"; };
+		6347D7691E4BD6ED000DE893 /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		6347D76A1E4BD6ED000DE893 /* HeroContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroContext.swift; sourceTree = "<group>"; };
+		6347D76B1E4BD6ED000DE893 /* HeroDebugPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroDebugPlugin.swift; sourceTree = "<group>"; };
+		6347D76C1E4BD6ED000DE893 /* HeroDebugView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroDebugView.swift; sourceTree = "<group>"; };
+		6347D76D1E4BD6ED000DE893 /* HeroDefaultAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroDefaultAnimator.swift; sourceTree = "<group>"; };
+		6347D76E1E4BD6ED000DE893 /* HeroDefaultAnimatorViewContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroDefaultAnimatorViewContext.swift; sourceTree = "<group>"; };
+		6347D76F1E4BD6ED000DE893 /* HeroModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroModifier.swift; sourceTree = "<group>"; };
+		6347D7701E4BD6ED000DE893 /* HeroPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroPlugin.swift; sourceTree = "<group>"; };
+		6347D7711E4BD6ED000DE893 /* HeroTargetState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroTargetState.swift; sourceTree = "<group>"; };
+		6347D7721E4BD6ED000DE893 /* HeroTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroTypes.swift; sourceTree = "<group>"; };
+		6347D7731E4BD6ED000DE893 /* IgnoreSubviewModifiersPreprocessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IgnoreSubviewModifiersPreprocessor.swift; sourceTree = "<group>"; };
+		6347D7741E4BD6ED000DE893 /* MatchPreprocessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchPreprocessor.swift; sourceTree = "<group>"; };
+		6347D7751E4BD6ED000DE893 /* SourcePreprocessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourcePreprocessor.swift; sourceTree = "<group>"; };
+		6347D7761E4BD6ED000DE893 /* UIKit+Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+Hero.swift"; sourceTree = "<group>"; };
+		6347D78B1E4BD70A000DE893 /* StoryVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryVideoViewController.swift; sourceTree = "<group>"; };
+		6347D78D1E4BD735000DE893 /* StoryVideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryVideoView.swift; sourceTree = "<group>"; };
 		63D066491E45321E0047E2CF /* UIColor+Yuki.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Yuki.swift"; sourceTree = "<group>"; };
-		63D066651E4534BC0047E2CF /* StartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		63D066671E45356F0047E2CF /* BigBanging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigBanging.swift; sourceTree = "<group>"; };
 		63D066691E4538280047E2CF /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		63D0666B1E454BA10047E2CF /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +165,7 @@
 				6302675B1E2ACB75008107C8 /* Info.plist */,
 				630267531E2ACB75008107C8 /* Yuki_s_Happy_Circles.xcdatamodeld */,
 				63EC94A81E3140C200FC1BA5 /* CloudManager.swift */,
+				6347D7621E4BD6C8000DE893 /* HERO */,
 			);
 			path = "Yuki's Happy Circles";
 			sourceTree = "<group>";
@@ -130,6 +177,33 @@
 				630267661E2ACB75008107C8 /* Info.plist */,
 			);
 			path = "Yuki's Happy CirclesUITests";
+			sourceTree = "<group>";
+		};
+		6347D7621E4BD6C8000DE893 /* HERO */ = {
+			isa = PBXGroup;
+			children = (
+				6347D7631E4BD6ED000DE893 /* Array+HeroModifier.swift */,
+				6347D7641E4BD6ED000DE893 /* CALayer+Hero.swift */,
+				6347D7651E4BD6ED000DE893 /* CAMediaTimingFunction+Hero.swift */,
+				6347D7661E4BD6ED000DE893 /* CascadePreprocessor.swift */,
+				6347D7671E4BD6ED000DE893 /* CG+Hero.swift */,
+				6347D7681E4BD6ED000DE893 /* DispatchQueue+Hero.swift */,
+				6347D7691E4BD6ED000DE893 /* Hero.swift */,
+				6347D76A1E4BD6ED000DE893 /* HeroContext.swift */,
+				6347D76B1E4BD6ED000DE893 /* HeroDebugPlugin.swift */,
+				6347D76C1E4BD6ED000DE893 /* HeroDebugView.swift */,
+				6347D76D1E4BD6ED000DE893 /* HeroDefaultAnimator.swift */,
+				6347D76E1E4BD6ED000DE893 /* HeroDefaultAnimatorViewContext.swift */,
+				6347D76F1E4BD6ED000DE893 /* HeroModifier.swift */,
+				6347D7701E4BD6ED000DE893 /* HeroPlugin.swift */,
+				6347D7711E4BD6ED000DE893 /* HeroTargetState.swift */,
+				6347D7721E4BD6ED000DE893 /* HeroTypes.swift */,
+				6347D7731E4BD6ED000DE893 /* IgnoreSubviewModifiersPreprocessor.swift */,
+				6347D7741E4BD6ED000DE893 /* MatchPreprocessor.swift */,
+				6347D7751E4BD6ED000DE893 /* SourcePreprocessor.swift */,
+				6347D7761E4BD6ED000DE893 /* UIKit+Hero.swift */,
+			);
+			name = HERO;
 			sourceTree = "<group>";
 		};
 		63D066301E4531CC0047E2CF /* NYRA */ = {
@@ -156,11 +230,14 @@
 		63D066641E4532680047E2CF /* FunTime */ = {
 			isa = PBXGroup;
 			children = (
-				63D066481E45321E0047E2CF /* StartViewController.swift */,
-				63D066651E4534BC0047E2CF /* StartView.swift */,
 				63D0666B1E454BA10047E2CF /* StoryViewController.swift */,
 				63D0666D1E454BD40047E2CF /* StoryView.swift */,
 				63D0666F1E454E930047E2CF /* StoryCollectionCell.swift */,
+				6347D75A1E4BBDED000DE893 /* APSpringButton.swift */,
+				6347D75C1E4BBEFE000DE893 /* PagedProgressControl.swift */,
+				6347D75E1E4BC090000DE893 /* Constants.swift */,
+				6347D78B1E4BD70A000DE893 /* StoryVideoViewController.swift */,
+				6347D78D1E4BD735000DE893 /* StoryVideoView.swift */,
 			);
 			name = FunTime;
 			sourceTree = "<group>";
@@ -287,20 +364,43 @@
 			buildActionMask = 2147483647;
 			files = (
 				63D066701E454E930047E2CF /* StoryCollectionCell.swift in Sources */,
+				6347D7821E4BD6ED000DE893 /* HeroDefaultAnimatorViewContext.swift in Sources */,
+				6347D78E1E4BD735000DE893 /* StoryVideoView.swift in Sources */,
+				6347D7851E4BD6ED000DE893 /* HeroTargetState.swift in Sources */,
+				6347D75D1E4BBEFE000DE893 /* PagedProgressControl.swift in Sources */,
 				63D066611E45321E0047E2CF /* UIColor+Yuki.swift in Sources */,
-				63D066601E45321E0047E2CF /* StartViewController.swift in Sources */,
+				6347D77A1E4BD6ED000DE893 /* CascadePreprocessor.swift in Sources */,
+				6347D77F1E4BD6ED000DE893 /* HeroDebugPlugin.swift in Sources */,
+				6347D7841E4BD6ED000DE893 /* HeroPlugin.swift in Sources */,
+				6347D7781E4BD6ED000DE893 /* CALayer+Hero.swift in Sources */,
+				6347D7811E4BD6ED000DE893 /* HeroDefaultAnimator.swift in Sources */,
 				63D0666E1E454BD40047E2CF /* StoryView.swift in Sources */,
 				63D0666C1E454BA10047E2CF /* StoryViewController.swift in Sources */,
+				6347D7801E4BD6ED000DE893 /* HeroDebugView.swift in Sources */,
+				6347D7861E4BD6ED000DE893 /* HeroTypes.swift in Sources */,
+				6347D77E1E4BD6ED000DE893 /* HeroContext.swift in Sources */,
+				6347D7771E4BD6ED000DE893 /* Array+HeroModifier.swift in Sources */,
 				6302674F1E2ACB75008107C8 /* ViewController.swift in Sources */,
+				6347D75B1E4BBDED000DE893 /* APSpringButton.swift in Sources */,
+				6347D75F1E4BC090000DE893 /* Constants.swift in Sources */,
 				630267721E2AE9BB008107C8 /* HappyCircle.swift in Sources */,
 				63D066681E45356F0047E2CF /* BigBanging.swift in Sources */,
 				63EB30B61E2AF8F9001B10B8 /* Month.swift in Sources */,
-				63D066661E4534BC0047E2CF /* StartView.swift in Sources */,
+				6347D77B1E4BD6ED000DE893 /* CG+Hero.swift in Sources */,
+				6347D7831E4BD6ED000DE893 /* HeroModifier.swift in Sources */,
 				630267551E2ACB75008107C8 /* Yuki_s_Happy_Circles.xcdatamodeld in Sources */,
+				6347D7871E4BD6ED000DE893 /* IgnoreSubviewModifiersPreprocessor.swift in Sources */,
+				6347D78C1E4BD70A000DE893 /* StoryVideoViewController.swift in Sources */,
 				6302674D1E2ACB75008107C8 /* AppDelegate.swift in Sources */,
+				6347D7891E4BD6ED000DE893 /* SourcePreprocessor.swift in Sources */,
 				63EB30B81E2AFF9B001B10B8 /* MonthCell.swift in Sources */,
+				6347D7881E4BD6ED000DE893 /* MatchPreprocessor.swift in Sources */,
+				6347D78A1E4BD6ED000DE893 /* UIKit+Hero.swift in Sources */,
 				63D0666A1E4538280047E2CF /* UIView+.swift in Sources */,
 				63EC94A91E3140C200FC1BA5 /* CloudManager.swift in Sources */,
+				6347D7791E4BD6ED000DE893 /* CAMediaTimingFunction+Hero.swift in Sources */,
+				6347D77C1E4BD6ED000DE893 /* DispatchQueue+Hero.swift in Sources */,
+				6347D77D1E4BD6ED000DE893 /* Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

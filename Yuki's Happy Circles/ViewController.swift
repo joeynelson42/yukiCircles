@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func funHouseEntrance(_ sender: UITapGestureRecognizer) {
-        let startVC = StartViewController()
+        let startVC = StoryViewController()
         let navVC = UINavigationController(rootViewController: startVC)
         navVC.isNavigationBarHidden = true
         navVC.modalTransitionStyle = .crossDissolve

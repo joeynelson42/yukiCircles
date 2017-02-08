@@ -11,13 +11,8 @@ import UIKit
 class StoryView: UIView, BigBanging {
     
     // MARK: Subviews
-    let locationContainer = UIView()
-    let locationLabel = UILabel()
-    
-    let videoContainer = UIView()
-    let videoLabel = UILabel()
-    
-    let nextButton = APSpringButton()
+    var collection: UICollectionView!
+    var pageProgress: PagedProgressControl!
     
     // MARK: Stored Constraints
     // (Store any constraints that might need to be changed or animated later)
@@ -35,68 +30,36 @@ class StoryView: UIView, BigBanging {
     fileprivate func configureSubviews() {
         backgroundColor = .white
         
-        locationContainer.backgroundColor = .white
-        locationContainer.layer.borderColor = UIColor.black.cgColor
-        locationContainer.layer.borderWidth = 4
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.minimumLineSpacing = 0
         
-        locationLabel.text = "Hey."
-        locationLabel.textColor = .black
-        locationLabel.adjustsFontSizeToFitWidth = true
-        locationLabel.font = UIFont(name: "Avenir-Medium", size: 35)
+        collection = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
+        collection.register(StoryCollectionCell.self, forCellWithReuseIdentifier: "storyCell")
+        collection.isPagingEnabled = true
+        collection.showsHorizontalScrollIndicator = false
+        collection.backgroundColor = .clear
+        collection.delaysContentTouches = false
         
-        videoContainer.backgroundColor = .white
-        videoContainer.layer.borderColor = UIColor.black.cgColor
-        videoContainer.layer.borderWidth = 4
+        for subview in collection.subviews {
+            if subview.isKind(of: UIScrollView.self) {
+                (subview as! UIScrollView).delaysContentTouches = false
+            }
+        }
         
-        videoLabel.text = "When you get there, tap this:"
-        videoLabel.numberOfLines = 0
-        videoLabel.textColor = .black
-        videoLabel.adjustsFontSizeToFitWidth = true
-        videoLabel.font = UIFont(name: "Avenir-Medium", size: 15)
-        
-        nextButton.setTitle("Next", for: .normal)
-        nextButton.titleLabel?.font = UIFont(name: "Avenir-Medium", size: 15)
-        nextButton.setTitleColor(.black, for: .normal)
-        nextButton.backgroundColor = .white
-        nextButton.layer.borderColor = UIColor.black.cgColor
-        nextButton.layer.borderWidth = 2.5
+        pageProgress = PagedProgressControl(count: 5, circleSize: 25, spacing: 10)
     }
     
     /// Add subviews, set layoutMargins, initialize stored constraints, set layout priorities, activate constraints
     fileprivate func configureLayout() {
-        addAutoLayoutSubview(locationContainer)
-        locationContainer.addAutoLayoutSubview(locationLabel)
+        addAutoLayoutSubview(collection)
+        addAutoLayoutSubview(pageProgress)
         
-        addAutoLayoutSubview(videoContainer)
-        videoContainer.addAutoLayoutSubview(videoLabel)
-        
-        addAutoLayoutSubview(nextButton)
-        
+        collection.fillSuperview()
         // Activate NSLayoutAnchors within this closure
         NSLayoutConstraint.activate([
-            locationContainer.centerXAnchor.constraint(equalTo: centerXAnchor),
-            locationContainer.widthAnchor.constraint(equalToConstant: 225),
-            locationContainer.heightAnchor.constraint(equalToConstant: 225),
-            locationContainer.topAnchor.constraint(equalTo: topAnchor, constant: 50),
-            
-            locationLabel.centerYAnchor.constraint(equalTo: locationContainer.centerYAnchor),
-            locationLabel.leftAnchor.constraint(equalTo: locationContainer.leftAnchor, constant: 15),
-            locationLabel.rightAnchor.constraint(equalTo: locationContainer.rightAnchor),
-            
-            videoContainer.centerXAnchor.constraint(equalTo: centerXAnchor),
-            videoContainer.widthAnchor.constraint(equalToConstant: 150),
-            videoContainer.heightAnchor.constraint(equalToConstant: 150),
-            videoContainer.topAnchor.constraint(equalTo: locationContainer.bottomAnchor, constant: 70),
-            
-            videoLabel.topAnchor.constraint(equalTo: videoContainer.topAnchor),
-            videoLabel.bottomAnchor.constraint(equalTo: videoContainer.bottomAnchor),
-            videoLabel.leftAnchor.constraint(equalTo: videoContainer.leftAnchor, constant: 10),
-            videoLabel.rightAnchor.constraint(equalTo: videoContainer.rightAnchor),
-            
-            nextButton.rightAnchor.constraint(equalTo: rightAnchor, constant: -22),
-            nextButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -22),
-            nextButton.widthAnchor.constraint(equalToConstant: 80),
-            nextButton.heightAnchor.constraint(equalToConstant: 30)
+            pageProgress.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -40),
+            pageProgress.centerXAnchor.constraint(equalTo: centerXAnchor),
             ])
     }
 }
